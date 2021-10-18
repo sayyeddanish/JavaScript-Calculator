@@ -5,5 +5,13 @@
     background-color:red;
 }
 tr{
-    background-color: red !important;
+    background-color: blue !important;
+    text-align:center;
+}
+td{
+    width: 50px;
+    height:50px;
+    background-color:rgb(211, 190, 190);
+    padding: 5px;
+    margin:5px;
 }

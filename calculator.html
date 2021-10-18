@@ -8,28 +8,36 @@
         <div class="calci"> 
             <table class="calciTable">
                     <tr>
-                        <td onclick="enterNumber(7)">7</td>
-                        <td onclick="enterNumber(8)">8</td>
-                        <td onclick="enterNumber(9)">9</td>
-                        <td >+</td>
+                        <td colspan="4">
+                        <input type="text" id="input_val">
+                         </td>
                     </tr>
                     <tr>
-                        <td onclick="enterNumber(4)">4</td>
-                        <td onclick="enterNumber(5)">5</td>
-                        <td onclick="enterNumber(6)">6</td>
-                        <td>-</td>
+                        <td onclick="enterNumber('/','opt')">/</td>
+                        <td onclick="enterNumber('*','opt')">*</td>
+                        <td  colspan="2"onclick="clearNumber()">AC</td>
                     </tr>
                     <tr>
-                        <td onclick="enterNumber(1)">1</td>
-                        <td onclick="enterNumber(2)">2</td>
-                        <td onclick="enterNumber(3)">3</td>
-                        <td >*</td>
+                        <td onclick="enterNumber(7,'num')">7</td>
+                        <td onclick="enterNumber(8,'num')">8</td>
+                        <td onclick="enterNumber(9,'num')">9</td>
+                        <td onclick="enterNumber('+','opt')">+</td>
                     </tr>
                     <tr>
-                        <td onclick="enterNumber(0)">0</td>
-                        <td>.</td>
-                        <td>/</td>
-                        <td>=</td>
+                        <td onclick="enterNumber(4,'num')">4</td>
+                        <td onclick="enterNumber(5,'num')">5</td>
+                        <td onclick="enterNumber(6,'num')">6</td>
+                        <td onclick="enterNumber('-','opt')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="enterNumber(1,'num')">1</td>
+                        <td onclick="enterNumber(2,'num')">2</td>
+                        <td onclick="enterNumber(3,'num')">3</td>
+                        <td rowspan="2" onclick="equalTo()">=</td>
+                    </tr>
+                    <tr>
+                        <td colspan='2' onclick="enterNumber(0,'num')">0</td>
+                        <td onclick="enterNumber('.','dec')">.</td>
                     </tr>
             </table>
         </div>
